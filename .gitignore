@@ -5,6 +5,7 @@ __pycache__/
 
 # data file
 vehicles.csv
+vehicles_new.csv
 
 # C extensions
 *.so
