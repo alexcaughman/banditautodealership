@@ -12,8 +12,13 @@ Original data set from [Kaggle](https://www.kaggle.com/austinreese/craigslist-ca
 - Limit data to 5 years
 - Limit to price range ($ to $)
 
-create database called bandit_auto using the script
-create table called vehicles using the script
-create the app user account with the script
-using PGAdmin import the file vehicles_final.csv
-be sure to delete id from the column list before importing
+---
+
+## Set up the PostgreSQL Database
+
+1. create database called bandit_auto using the script
+1. create table called vehicles using the script
+1. create the app user account with the script
+1. using PGAdmin import the file vehicles_final.csv
+
+- be sure to delete id from the column list before importing
