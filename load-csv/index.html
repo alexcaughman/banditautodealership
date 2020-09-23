@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
+  
     <!-- The div that holds our map -->
     <div id="map"></div>
     <!-- Leaflet JavaScript -->
@@ -25,6 +27,65 @@
     
     <!-- Link to Javascript Code -->
     <script type="text/javascript" src="app.js"></script>
+
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="Make">Choose a Make</label>
+                        <select name="Make" id="Make-select"></select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="Model">Choose a Model</label>
+                        <select name="Model" id="Model-select"></select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="Year">Choose the Year</label>
+                        <select name="Year" id="Year-select"></select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="Type">Choose the Type</label>
+                        <select name="Type" id="Type-select"></select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="Odometer">Choose the Odometer</label>
+                        <select name="Odometer" id="Odometer-select"></select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="Doors">Choose the Doors</label>
+                        <select name="Doors" id="Doors-select"></select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="Drivetrain">Choose the Drivetrain</label>
+                        <select name="Drivetrain" id="Drivetrain-select"></select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="Transmission">Choose the Transmission</label>
+                        <select name="Transmission" id="Transmission-select"></select>
+                      </li>
+                    </ul>
+                  </div>
+                  <button
+                    id="filter-btn"
+                    type="button"
+                    class="btn btn-default"
+                  >
+                    Filter Data
+                  </button>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
 
 </body>
 </html>
