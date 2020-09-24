@@ -5,8 +5,11 @@ d3.csv("../Car_API_Call/merged_data.csv").then(function(carData){
     var south = [];
     var southPrices =[];
     var west = [];
+    var westPrices = [];
     var northeast = [];
+    var northeastPrices = [];
     var midwest = [];
+    var midwestPrices = []; 
 
     carData.forEach(x => {
         if (x.state ==='ct' || x.state === 'me' || x.state === 'ma' || x.state === 'nh' ||
@@ -30,16 +33,31 @@ d3.csv("../Car_API_Call/merged_data.csv").then(function(carData){
             west.push(x);
         }
     });
+
+    var southListings = south.length;
+    var westListings = west.length;
+    var northeastListings = northeast.length;
+    var midwestListings = midwest.length; 
+
     // console.log(northeast);
     // console.log(midwest);
     console.log(south);
-    console.log(southPrices)
+    console.log(southPrices);
+    console.log(southListings);
     // console.log(west);
 
-    // var sp = []
-    // var southPrices = south.forEach(x => {
-    //     var price = x.price;
-    //     sp.push(price)
-    // })
-    // console.log(sp)
+
+    var data = [{
+        values: [southListings, westListings, northeastListings, midwestListings],
+        labels: ['South', 'West', 'North East', 'Midwest'],
+        type: 'pie'
+      }];
+      
+      var layout = {
+        height: 400,
+        width: 500
+      };
+      
+      Plotly.newPlot('myDiv', data, layout);
+      
 });
