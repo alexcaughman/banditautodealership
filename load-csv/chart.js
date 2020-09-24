@@ -9,9 +9,9 @@ function makeChart(cars){
         return +d.MSRP
     })
 
-    // console.log(carprice)
-    // console.log(carmsrp)
-    // console.log(carslabels)
+    console.log(carprice)
+    console.log(carmsrp)
+    console.log(carslabels)
 
     var chart = new Chart('chart', {
         type: "horizontalBar",
@@ -25,15 +25,22 @@ function makeChart(cars){
             labels: carslabels,
             datasets:[
                 {
-                    data1: carprice,
-                    data2: carmsrp
+                    data: carprice,
+                    backgroundColor: "#3e95cd"
+                },
+                {
+                    data: carmsrp,
+                    backgroundColor: "#8e5ea2"
+
                 }
             ]
         }
     });
 }
 
+
+
 // https://www.createwithdata.com/chartjs-and-csv/
 
-d3.csv("../Car_API_Call/merged_data.csv")
+d3.csv("../Car API Call/merged_data.csv")
 .then(makeChart);
