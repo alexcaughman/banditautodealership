@@ -37,6 +37,11 @@ function makeChart(cars){
             maintainAspectRatio: true,
             legend:{
                 display: true
+            },
+            title: {
+                display: true,
+                text: "Craigslist vs MSRP",
+                fontSize: 30
             }
         },
         data: {
