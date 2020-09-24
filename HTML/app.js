@@ -1,7 +1,7 @@
 // Create Map, Passing In satelliteMap & earthquakes as Default Layers to Display on Load
 var myMap = L.map("map", {
   center: [39.8283, -98.5795],
-  zoom: 4,
+  zoom: 5,
 });
 
   // Define variables for our tile layers
