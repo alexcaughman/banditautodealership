@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cars</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  
+    <!-- The div that holds our map -->
+    <div id="map"></div>
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+    
+    <!-- D3 JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+
+    <!-- API KEY  -->
+    <script type="text/javascript" src="config.js"></script>
+  
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    
+    <!-- Link to Javascript Code -->
+    <script type="text/javascript" src="app.js"></script>
+
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="Make">Choose a Make</label>
+                        <select name="Make" id="Make-select"></select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="Model">Choose a Model</label>
+                        <select name="Model" id="Model-select"></select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="Year">Choose the Year</label>
+                        <select name="Year" id="Year-select"></select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="Type">Choose the Type</label>
+                        <select name="Type" id="Type-select"></select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="Odometer">Choose the Odometer</label>
+                        <select name="Odometer" id="Odometer-select"></select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="Doors">Choose the Doors</label>
+                        <select name="Doors" id="Doors-select"></select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="Drivetrain">Choose the Drivetrain</label>
+                        <select name="Drivetrain" id="Drivetrain-select"></select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="Transmission">Choose the Transmission</label>
+                        <select name="Transmission" id="Transmission-select"></select>
+                      </li>
+                    </ul>
+                  </div>
+                  <button
+                    id="filter-btn"
+                    type="button"
+                    class="btn btn-default"
+                  >
+                    Filter Data
+                  </button>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
