@@ -1,0 +1,22 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#map,
+body,
+html {
+  height: 50%;
+}
+/*Setup*/
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+html,
+body,
+#mapid {
+  height: 100%;
+  width: 100%;
+}
