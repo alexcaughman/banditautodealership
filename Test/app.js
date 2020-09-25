@@ -1,5 +1,5 @@
 // Create Map, Passing In satelliteMap & earthquakes as Default Layers to Display on Load
-var myMap = L.map("map", {
+var myMap = L.map("mapid", {
   center: [39.8283, -98.5795],
   zoom: 4,
 });
