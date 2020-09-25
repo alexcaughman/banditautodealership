@@ -23,7 +23,7 @@ Base = automap_base()
 Base.prepare(engine, reflect=True)
 
 # Save references to each table
-car_value_data = Base.classes.car_value_data
+car_value_data_dedup = Base.classes.car_value_data_dedup
 makemodel = Base.classes.makemodel
 
 #####################################
@@ -47,15 +47,29 @@ def returnAll():
     # Open session
     session = Session(engine)
     allData = session.query(
-        car_value_data.make,
-        car_value_data.model,
-        car_value_data.year,
-        car_value_data.type,
-        car_value_data.odometer,
-        car_value_data.doors,
-        car_value_data.drivetrain,
-        car_value_data.transmission
-
+        car_value_data_dedup.vin,
+        car_value_data_dedup.year,
+        car_value_data_dedup.make,
+        car_value_data_dedup.model,
+        car_value_data_dedup.year,
+        car_value_data_dedup.style,
+        car_value_data_dedup.type,
+        car_value_data_dedup.doors,
+        car_value_data_dedup.fuel_type,
+        car_value_data_dedup.city_mileage,
+        car_value_data_dedup.highway_mileage,
+        car_value_data_dedup.engine_type,
+        car_value_data_dedup.transmission,
+        car_value_data_dedup.drivetrain,
+        car_value_data_dedup.msrp_numeric,
+        car_value_data_dedup.price,
+        car_value_data_dedup.condition,
+        car_value_data_dedup.fuel,
+        car_value_data_dedup.size,
+        car_value_data_dedup.odometer,
+        car_value_data_dedup.state,
+        car_value_data_dedup.lat,
+        car_value_data_dedup.long
     ).all()
     session.close
     return(jsonify(allData))
