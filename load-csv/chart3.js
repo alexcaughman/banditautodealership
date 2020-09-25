@@ -337,7 +337,7 @@ function makeChart(cars){
             },
             title: {
                 display: true,
-                text: "Pie Chart",
+                text: "Car Pie Chart",
                 fontSize: 20
             }
         },
