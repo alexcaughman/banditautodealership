@@ -1,0 +1,40 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+#map,
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+/*Setup*/
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+html,
+body,
+#mapid {
+  height: 100%;
+  width: 100%;
+}
+#filters {
+  margin-right: 0px;
+  padding-left: 0px;
+  width: 100%;
+}
+#filter-btn {
+  outline: white;
+}
+#mapid {
+  position: absolute;
+  height: 900px;
+  width: 80%;
+}
+.container{
+  margin: 0px !important;
+  width: 100% !important;
+  height: 972px;
+}
